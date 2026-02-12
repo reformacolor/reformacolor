@@ -4,105 +4,93 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reforma Color | Pintura y Reformas en Málaga</title>
-<meta name="description" content="Empresa de pintura y reformas en Málaga y provincia. Pintura interior y exterior, reformas integrales y alisado de paredes.">
+<meta name="description" content="Empresa de pintura y reformas en Málaga y provincia. Pintura interior y exterior, pequeñas reformas y alisado de paredes.">
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-header {
-    background: #111;
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-}
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-header p {
-    font-size: 1.2em;
-}
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #e63946;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-section {
-    padding: 60px 20px;
-    max-width: 1100px;
-    margin: auto;
-}
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-.card {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-}
-footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-button {
-    padding: 10px 20px;
-    background: #e63946;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
+/* Reset básico */
+body, h1, h2, h3, p, ul { margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+a { text-decoration: none; color: inherit; }
+
+/* Encabezado */
+header { background: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080') center/cover no-repeat; color: white; padding: 80px 20px; text-align: center; position: relative; }
+header::after { content: ""; position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); }
+header h1 { font-size: 2.8em; position: relative; z-index: 1; }
+header p { font-size: 1.2em; position: relative; z-index: 1; }
+.btn { display: inline-block; margin-top: 20px; padding: 12px 25px; background: #e63946; color: white; border-radius: 5px; position: relative; z-index:1; }
+
+/* Secciones */
+section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+h2 { text-align: center; margin-bottom: 40px; color: #111; }
+
+/* Servicios */
+.services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.card { background: #f4f4f4; padding: 20px; border-radius: 8px; text-align: center; }
+.card img { width: 100%; height: 150px; object-fit: cover; border-radius: 6px; margin-bottom: 15px; }
+
+/* Galería */
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+.gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 6px; }
+
+/* Contacto */
+input, textarea { width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc; }
+button { padding: 12px 20px; background: #e63946; color: white; border: none; cursor: pointer; border-radius: 5px; }
+button:hover { background: #d62828; }
+
+/* Footer */
+footer { background: #111; color: white; text-align: center; padding: 20px; }
+
+/* Botón flotante WhatsApp */
+.whatsapp { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; font-size: 30px; z-index: 1000; text-decoration: none; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
 </style>
 </head>
-
 <body>
 
+<!-- Encabezado -->
 <header>
     <h1>Reforma Color</h1>
-    <p>Pintura y Reformas en Málaga y toda la provincia</p>
+    <p>Pintura y pequeñas reformas en Málaga y provincia</p>
     <a href="#contacto" class="btn">Solicitar Presupuesto</a>
 </header>
 
+<!-- Servicios -->
 <section>
     <h2>Servicios</h2>
     <div class="services">
         <div class="card">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Pintura interior">
             <h3>Pintura Interior</h3>
             <p>Pintamos casas, apartamentos y todo tipo de inmuebles con acabados profesionales.</p>
         </div>
         <div class="card">
+            <img src="https://images.unsplash.com/photo-1560448204-8c3d55a0b3ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Pintura exterior">
             <h3>Pintura Exterior</h3>
             <p>Fachadas y exteriores resistentes al clima y con máxima durabilidad.</p>
         </div>
         <div class="card">
-            <h3>Reformas Integrales</h3>
-            <p>Reformas completas de viviendas y locales comerciales.</p>
-        </div>
-        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600585154457-1d7e79b6d0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Pequeñas reformas">
             <h3>Pequeñas Reformas</h3>
             <p>Baños, cocinas, reparaciones y mejoras en el hogar.</p>
         </div>
         <div class="card">
+            <img src="https://images.unsplash.com/photo-1600585154395-2a8571ebca37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Alisado de paredes">
             <h3>Alisado de Paredes</h3>
             <p>Eliminación de gotelé y acabado liso profesional.</p>
         </div>
     </div>
 </section>
 
+<!-- Galería -->
+<section>
+    <h2>Galería de trabajos</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1581091215361-9c5e31a0beaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Trabajo 1">
+        <img src="https://images.unsplash.com/photo-1560185008-5a7d0ef2b0a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Trabajo 2">
+        <img src="https://images.unsplash.com/photo-1600585154273-15c1f0d9df3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Trabajo 3">
+        <img src="https://images.unsplash.com/photo-1598368385707-f689e8c3a094?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Trabajo 4">
+    </div>
+</section>
+
+<!-- Contacto -->
 <section id="contacto">
     <h2>Contacto</h2>
     <p><strong>Teléfono:</strong> TU_NUMERO_AQUI</p>
@@ -118,9 +106,13 @@ button {
     </form>
 </section>
 
+<!-- Footer -->
 <footer>
     <p>© 2026 Reforma Color - Málaga y provincia</p>
 </footer>
+
+<!-- Botón flotante WhatsApp -->
+<a href="https://wa.me/34TU_NUMERO_AQUI" target="_blank" class="whatsapp">💬</a>
 
 </body>
 </html>
